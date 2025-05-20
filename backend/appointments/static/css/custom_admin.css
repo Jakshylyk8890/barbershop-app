@@ -1,0 +1,78 @@
+:root {
+  --primary: #0047FF !important;
+}
+
+#branding h1 {
+  font-size: 24px !important;
+  color: #0047FF;
+}
+
+.module caption {
+  font-weight: bold;
+  color: #0047FF;
+}
+
+.sidebar {
+  background-color: #1A1A1A !important;
+}
+
+.sidebar a {
+  color: #fff !important;
+}
+
+.button.default {
+  background-color: #0047FF !important;
+  border-radius: 6px !important;
+}
+
+
+body {
+  background-color: #f9faff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  color: #0047FF;
+  font-size: 24px;
+}
+
+
+/* Resize login page logo */
+.login-logo img {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* static/css/custom_admin.css */
+.login-logo {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* White background top navbar */
+.navbar-white {
+    background-color: #ffffff !important;
+    color: #0047FF;
+}
+
+.sidebar {
+    background-color: #0047FF !important;
+}
+
+.sidebar a {
+    color: white !important;
+}
+
+.sidebar .nav-link.active {
+    background-color: #ffffff !important;
+    color: #0047FF !important;
+    font-weight: bold;
+}
+
+.brand-link {
+    background-color: #ffffff !important;
+    color: #0047FF !important;
+}

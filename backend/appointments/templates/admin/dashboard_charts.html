@@ -1,0 +1,31 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block content %}
+  <h1>📊 Appointments by Barber</h1>
+  <canvas id="barberChart" width="600" height="300"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const barbers = {{ barbers|safe }};
+    const counts = {{ counts|safe }};
+
+    new Chart(document.getElementById("barberChart"), {
+      type: 'bar',
+      data: {
+        labels: barbers,
+        datasets: [{
+          label: 'Appointments',
+          data: counts,
+          backgroundColor: '#0047FF'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+  </script>
+{% endblock %}
